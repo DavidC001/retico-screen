@@ -30,7 +30,7 @@ setup(
         "retico-core",
         # "retico-vision",
     ],
-    keywords="retico, real-time, dialogue, object detection, computer vision, CLIP, feature extraction",
+    keywords="retico, real-time, dialogue, object detection, computer vision",
     project_urls={
         
     },
