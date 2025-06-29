@@ -30,6 +30,7 @@ For a basic example of how to use the `retico-screen` module, refer to the `exam
 retico-screen/
 ├── retico_screen/
 │   ├── __init__.py
+│   ├── converter.py          # Converter module to convert DetectedObjectsIU to ImageIU for display
 │   ├── screen.py            # Main screen module for displaying video streams and detected objects
 │   └── version.py              # Version information
 ├── setup.py                    # Package setup
@@ -42,4 +43,3 @@ retico-screen/
 
 - [ReTiCo Core](https://github.com/retico-team/retico-core) - The core ReTiCo framework
 - [ReTiCo Vision](https://github.com/retico-team/retico-vision) - Vision components for ReTiCo
-- [Hugging Face Transformers](https://github.com/huggingface/transformers) - The transformers library used for vision models
