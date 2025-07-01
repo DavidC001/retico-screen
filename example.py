@@ -8,22 +8,16 @@ from retico_yolov11.yolov11 import Yolov11
 webcam = WebcamModule()
 yolo = Yolov11()  
 converter = Convert_DetectedObjectsIU_ImageIU(num_obj_to_display=5)
-screen = ScreenModule(image_size=(640, 480))
+screen = ScreenModule()
 debug = DebugModule()  
 
 webcam.subscribe(yolo)
 yolo.subscribe(converter)
 converter.subscribe(screen)
 
-webcam.run()  
-yolo.run()
-converter.run()
-screen.run()
+network.run(webcam)
 
 print("Network is running")
 input()
 
-webcam.stop() 
-yolo.stop()
-converter.stop()
-screen.stop()
+network.stop(webcam)
