@@ -27,7 +27,7 @@ setup(
     packages=find_packages(),
     python_requires=">=3.7",
     install_requires=[
-        "retico-core",
+        # "retico-core",
         # "retico-vision",
     ],
     keywords="retico, real-time, dialogue, object detection, computer vision",
